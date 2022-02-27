@@ -17,3 +17,9 @@ Write a program to extrace first half of a strong of even length*/
 const Exercise2 = (str) => str.slice(0, str.length / 2)
 
 console.log(Exercise2('HelloWorld'))
+
+/*Exercise 3:
+Write a program to concatenate two strings except their first character*/
+
+const Exercise3 = (str, str2) => str.slice(1).concat(str2.slice(1))
+console.log(Exercise3('hello', 'world'))
