@@ -40,3 +40,9 @@ if( 100 - num1 == 100 - num2){
 
 }
 console.log(Exercise4( 51, 50))
+
+/*Exercise 5:
+Write a program to check if a given string contains 2 to 4 occurences of a specified character*/
+
+const Exercise5 = (str) => str.match(/z/g)
+console.log(Exercise5('Hello World'))
