@@ -23,3 +23,20 @@ Write a program to concatenate two strings except their first character*/
 
 const Exercise3 = (str, str2) => str.slice(1).concat(str2.slice(1))
 console.log(Exercise3('hello', 'world'))
+
+/*Exercise 4:
+Given two values, write a program to find out which on is nearest to 100*/
+
+const Exercise4 = (num1, num2) => {
+    if( 100 - num1 < 100 - num2){
+        console.log(num1)
+    }
+    if( 100 - num1 > 100 - num2){
+        console.log(num2)
+}
+if( 100 - num1 == 100 - num2){
+    console.log("Both are the same")
+}
+
+}
+console.log(Exercise4( 51, 50))
