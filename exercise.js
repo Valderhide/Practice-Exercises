@@ -2,15 +2,16 @@
 Take first 3 and last 3 characters of a string, and add them together to make a new string
 */
 const Exercise1 = (str) => {
+    let newStr;
     if (str.length > 3) {
-        str.slice(0, 3) + str.slice(-3)
+        newStr = str.slice(0, 3) + str.slice(-3);
 
     }
     else {
-        return str
-    }}
-
-console.log(Exercise1('Hello World'))
+        newStr = str;
+    }
+    alert(newStr)
+}
 
 /*Exercise 2:
 Write a program to extrace first half of a strong of even length*/
@@ -28,18 +29,18 @@ console.log(Exercise3('hello', 'world'))
 Given two values, write a program to find out which on is nearest to 100*/
 
 const Exercise4 = (num1, num2) => {
-    if( 100 - num1 < 100 - num2){
+    if (100 - num1 < 100 - num2) {
         console.log(num1)
     }
-    if( 100 - num1 > 100 - num2){
+    if (100 - num1 > 100 - num2) {
         console.log(num2)
-}
-if( 100 - num1 == 100 - num2){
-    console.log("Both are the same")
-}
+    }
+    if (100 - num1 == 100 - num2) {
+        console.log("Both are the same")
+    }
 
 }
-console.log(Exercise4( 51, 50))
+console.log(Exercise4(51, 50))
 
 /*Exercise 5:
 Write a program to check if a given string contains 2 to 4 occurences of a specified character*/
