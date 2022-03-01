@@ -45,5 +45,13 @@ console.log(Exercise4(51, 50))
 /*Exercise 5:
 Write a program to check if a given string contains 2 to 4 occurences of a specified character*/
 
-const Exercise5 = (str) => str.match(/z/g)
-console.log(Exercise5('Hello World'))
+const countChars = (str, char) =>
+    str.split('').filter(ch => ch === char).length;
+
+const Exercise5 = (str, char) =>
+    countChars(str, char) >= 2 && countChars(str, char) <= 4;
+
+console.log(Exercise5('ooooooh!', 'o'));
+console.log(Exercise5('ooooh!', 'o'));
+console.log(Exercise5('oooh!', 'o'));
+console.log(Exercise5('oh!', 'o'));
